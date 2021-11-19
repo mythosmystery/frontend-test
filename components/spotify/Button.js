@@ -2,7 +2,7 @@ import React from 'react';
 
 function Button({ children }) {
    return (
-      <button className='bg-brand-button border-transparent border py-4 px-8 rounded-full text-white text-sm hover:bg-transparent hover:border-brand-button hover:text-brand-button  transition-all duration-200'>
+      <button className='bg-brand-button border-transparent border py-4 px-8 rounded-full text-white text-sm lg:text-lg hover:bg-transparent hover:border-brand-button hover:text-brand-button  transition-all duration-200'>
          {children}
       </button>
    );

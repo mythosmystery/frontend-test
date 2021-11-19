@@ -35,6 +35,16 @@ export default function Content() {
                         </Card.Button>
                      </Card.Footer>
                   </Card>
+                  <Card>
+                     <Card.Tag>Podcast</Card.Tag>
+                     <Card.Body>01: How do you steal from a pirate?</Card.Body>
+                     <Card.Footer>
+                        <p>Listen</p>
+                        <Card.Button>
+                           <AiOutlineArrowRight size='18' />
+                        </Card.Button>
+                     </Card.Footer>
+                  </Card>
                </CardWrapper>
                <div className='flex justify-center my-10'>
                   <Button>Discover more</Button>
@@ -42,11 +52,17 @@ export default function Content() {
             </section>
 
             <section className='mb-20'>
-               <h1 className='text-3xl text-center p-6 my-4'>Quick Clicks</h1>
-               <div className='flex flex-col gap-y-4 m-4'>
-                  <QuickClick>Categories</QuickClick>
-                  <QuickClick>Students</QuickClick>
-                  <QuickClick>Being here</QuickClick>
+               <h1 className='text-3xl lg:text-6xl text-center p-6 my-4 lg:my-12'>Quick Clicks</h1>
+               <div className='flex flex-col gap-y-4 m-4 lg:m-14'>
+                  <QuickClick shortTitle='Categories'>
+                     Discover more about our <span className='font-bold text-black'>categories</span>
+                  </QuickClick>
+                  <QuickClick shortTitle='Students'>
+                     <span className='font-bold text-black'>Students</span>, make an impact not the coffees
+                  </QuickClick>
+                  <QuickClick shortTitle='Being here'>
+                     Read about <span className='font-bold text-black'>being here</span>
+                  </QuickClick>
                </div>
             </section>
          </div>
