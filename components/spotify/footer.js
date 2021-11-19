@@ -13,16 +13,16 @@ export default function Footer() {
                width='80'
             />
          </div>
-         <h1 className='text-center text-2xl text-white my-4'>Sound good?</h1>
-         <p className='text-lg text-white text-center mx-4'>
+         <h1 className='text-center text-2xl text-white my-4 lg:text-5xl'>Sound good?</h1>
+         <p className='text-lg text-white text-center mx-4 lg:mx-auto lg:w-2/5 lg:text-2xl lg:font-light'>
             Get to know our hiring process before you apply or find answers to any lingering questions, right here,
             right now.
          </p>
-         <div className='flex justify-evenly my-10 mx-4'>
+         <div className='flex justify-center gap-x-6 my-10 mx-4'>
             <Button.Dark>How we hire</Button.Dark>
             <Button.Dark>Read our FAQ</Button.Dark>
          </div>
-         <div className='flex flex-col gap-y-6 text-white mx-4 my-12 text-sm'>
+         <div className='flex flex-col gap-y-6 text-white mx-4 my-12 text-sm lg:hidden'>
             <div className='flex justify-center items-center'>
                <div className='flex-grow'>Communities</div>
                <MdKeyboardArrowDown size='30' />
