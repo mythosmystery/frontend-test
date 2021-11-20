@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from './Card';
 import CardWrapper from './CardWrapper';
 import { AiOutlineArrowRight } from 'react-icons/ai';
@@ -6,14 +6,12 @@ import Button from './Button';
 import QuickClick from './QuickClick';
 
 export default function Content() {
+   const [bgColor, setBgColor] = useState('bg-white');
    return (
-      <div
-         id='content'
-         className='relative min-h-screen mb-[100vh] pt-12 max-w-screen bg-brand-pink rounded-b-3xl z-20'
-      >
+      <div id='content' className={'relative min-h-screen mb-[100vh] pt-12 max-w-screen rounded-b-3xl z-20 ' + bgColor}>
          <div className='flex flex-col break-words'>
             <section className='mb-24'>
-               <h1 className='text-2xl text-center p-6 my-4'>Fresh Content</h1>
+               <h1 className='text-2xl text-center p-6 my-4 lg:text-5xl'>Fresh Content</h1>
                <CardWrapper>
                   <Card>
                      <Card.Tag>Design</Card.Tag>

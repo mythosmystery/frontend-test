@@ -18,7 +18,7 @@ function Button({ children }) {
    return <div className='rounded-full bg-white p-1.5 text-brand-button mx-2'>{children}</div>;
 }
 function Body({ children }) {
-   return <div className='text-2xl lg:text-3xl lg:font-bold mx-auto w-56 flex-grow'>{children}</div>;
+   return <div className='text-2xl lg:text-3xl lg:font-bold mx-auto w-56 lg:w-full flex-grow'>{children}</div>;
 }
 function Footer({ children }) {
    return <div className='text-sm flex items-center lg:text-lg'>{children}</div>;
